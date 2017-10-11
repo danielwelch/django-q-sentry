@@ -26,4 +26,4 @@ Q_CLUSTER = {
     }
 }
 ```
-Please check the [python sentry client configuration docs](https://docs.sentry.io/clients/python/) for more options. Additional options defined in `Q_CLUSTER` are passed directly as kwargs to instantiation of [`raven.Client`](https://docs.sentry.io/clients/python/#configuring-the-client).
+Please check the [python sentry client configuration docs](https://docs.sentry.io/clients/python/) for more options. Additional key-value pairs defined in `Q_CLUSTER['error_reporter']['sentry']` are passed directly as kwargs to instantiation of [`raven.Client`](https://docs.sentry.io/clients/python/#configuring-the-client).
