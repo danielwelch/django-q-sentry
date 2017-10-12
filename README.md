@@ -1,7 +1,3 @@
-### Note
-
-This is a proposed [Django Q](https://github.com/Koed00/django-q/) plugin intended to serve as an accompaniment to the changes in Django Q proposed in this fork. This package does nothing until those changes are incorporated.
-
 # django-q-sentry
 
 A [Django Q](https://github.com/Koed00/django-q/) Error Reporter plugin adding Sentry support.
@@ -13,6 +9,8 @@ This plugin is intended to be included with Django Q as [setuptools extra](https
 `$ pip install django-q[sentry]`
 
 Or add `django-q[sentry]` to `requirements.txt`.
+
+>> This plugin requires Django Q version 0.8.1 or greater.
 
 ### Usage
 
