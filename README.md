@@ -10,7 +10,7 @@ This plugin is intended to be included with Django Q as [setuptools extra](https
 
 Or add `django-q[sentry]` to `requirements.txt`.
 
->> This plugin requires Django Q version 0.8.1 or greater.
+> This plugin requires Django Q version 0.8.1 or greater.
 
 ### Usage
 
