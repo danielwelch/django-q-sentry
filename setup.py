@@ -12,7 +12,7 @@ except ImportError:
 
 setup(
     name='django-q-sentry',
-    version='0.1.1',
+    version='0.1.2',
     author='Daniel Welch',
     author_email='dwelch2102@gmail.com',
     keywords='django distributed task queue worker scheduler cron redis disque ironmq sqs orm mongodb multiprocessing sentry',
