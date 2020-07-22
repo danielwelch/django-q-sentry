@@ -1,3 +1,5 @@
 .venv/
 .idea/
 django_q_sentry.egg-info/
+build/
+dist/
