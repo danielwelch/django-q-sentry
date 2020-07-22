@@ -1,3 +1,9 @@
+# VSUITE Stored fork of library
+## To be used until author updates pypi package
+This is necessitated by change of raven-sentry to sentry-sdk
+Raven is being deprecated. VSUITE already uses sentry-sdk so now we ship two libraries for the same thing.
+
+
 # django-q-sentry
 
 A [Django Q](https://github.com/Koed00/django-q/) Error Reporter plugin adding Sentry support.
