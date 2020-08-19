@@ -37,6 +37,7 @@ def return_task_from_stack(tb) -> dict:
     return return_task
 
 
+
 class Sentry(object):
 
     def __init__(self, dsn, **kwargs):
@@ -51,4 +52,5 @@ class Sentry(object):
             scope.set_extra('django_q_task_name', task.get('name', ''))
             scope.set_extra('django_q_task_func', task.get('func', ''))
             sentry_sdk.capture_exception(error=error)
+
 

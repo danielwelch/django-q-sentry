@@ -8,6 +8,7 @@ authors = ["Christo Goosen <christogoosen@gmail.com>", "Daniel Welch dwelch2102@
 python = "^3.6"
 sentry-sdk = "^0.16.5"
 
+
 [tool.poetry.dev-dependencies]
 
 [build-system]
