@@ -1,6 +1,7 @@
-import sentry_sdk
 import sys
 import traceback
+
+import sentry_sdk
 from sentry_sdk.integrations.logging import ignore_logger
 
 # Important to not log the logger.error nessages from django-q
