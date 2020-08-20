@@ -2,12 +2,8 @@ import os
 from setuptools import setup
 
 
-try:
-    import pypandoc
-    README = pypandoc.convert('README.md', 'rst')
-except ImportError:
-    with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
-        README = readme.read()
+with open("README.md", "r") as fh:
+    README = fh.read()
 
 
 setup(
@@ -22,4 +18,10 @@ setup(
     license='MIT',
     description='A Sentry support plugin for Django Q',
     long_description=README,
+    long_description_content_type="text/markdown",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
