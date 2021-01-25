@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='django-q-sentry',
-    version='0.1.4',
+    version='0.1.5',
     author='Daniel Welch, Christo Goosen',
     author_email='dwelch2102@gmail.com, christogoosen@gmail.com',
     keywords='django distributed task queue worker scheduler cron redis disque ironmq sqs orm mongodb multiprocessing sentry',
