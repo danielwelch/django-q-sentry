@@ -41,9 +41,6 @@ def return_task_from_stack(tb) -> dict:
 
 class Sentry(object):
 
-    def __init__(self, dsn, **kwargs):
-        sentry_sdk.init(dsn, **kwargs)
-
     def report(self):
         error = sys.exc_info()
         tb = error[2]
