@@ -4,9 +4,10 @@ import traceback
 import sentry_sdk
 from sentry_sdk.integrations.logging import ignore_logger
 
-# Important to not log the logger.error nessages from django-q
+# Important to not log the logger.error messages from django-q
 # We only want to catch the exceptions, not the logger
 ignore_logger('django-q')
+ignore_logger('django_q')
 
 
 def return_task_from_stack(tb) -> dict:
@@ -42,7 +43,8 @@ def return_task_from_stack(tb) -> dict:
 class Sentry(object):
 
     def __init__(self, dsn, **kwargs):
-        sentry_sdk.init(dsn, **kwargs)
+        if not sentry_sdk.is_initialized():
+            sentry_sdk.init(dsn, **kwargs)
 
     def report(self):
         error = sys.exc_info()
